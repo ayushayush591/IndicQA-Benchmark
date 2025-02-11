@@ -1,33 +1,59 @@
 # IndicQA-Benchmark
-> [INDIC QA BENCHMARK: A Multilingual Benchmark to Evaluate Question Answering capability of LLMs for Indic Languages](https://arxiv.org/abs/2407.13522)  
-> Abhishek Kumar Singh, Vishwajeet kumar, Rudra Murthy, Jaydeep Sen, Ashish Mittal and Ganesh Ramakrishnan  
-> The 2025 Annual Conference of the Nations of the Americas Chapter of the ACL, (__NAACL__) 2025
+
+**A Multilingual Benchmark to Evaluate Question Answering Capability of LLMs for Indic Languages**
+
+> **Citation**:  
+> **Abhishek Kumar Singh, Vishwajeet Kumar, Rudra Murthy, Jaydeep Sen, Ashish Mittal, and Ganesh Ramakrishnan**  
+> *The 2025 Annual Conference of the Nations of the Americas Chapter of the ACL (NAACL) 2025*  
+> [Link to Paper](https://arxiv.org/abs/2407.13522)
+
+---
 
 ## Overview
 
-The **IndicQA-Benchmark** repository is designed to evaluate various models and pipelines for question-answering tasks, particularly focused on Indic languages. The repository includes paths where one can download the benchmark locally, along with scripts for evaluating base models, fine-tuned instruction models, and translation tasks.
+The **IndicQA-Benchmark** repository is designed to evaluate various models and pipelines for question-answering tasks, particularly focused on Indic languages. It provides tools for evaluating base models, fine-tuned instruction models, and translation tasks. 
 
-To download the benchmark, use the following link:  
-**[Download IndicQA-Benchmark](your-download-link-here)**
+You can easily download and set up the benchmark locally, along with evaluation scripts for various tasks.
+
+### Download the Benchmark
+
+To download the IndicQA-Benchmark, click the link below:
+
+[Download IndicQA-Benchmark](your-download-link-here)
+
+---
 
 ## Scripts
 
-- **Base Model Evaluation with VLLM**:  
-  To evaluate the base model using the VLLM library, use the `Base_model.py` script.
+The repository includes several scripts for evaluating different types of models and tasks. Below are the available scripts:
 
-- **Base Model Evaluation with Hugging Face**:  
-  To evaluate the base model using Hugging Face, use the `Hugging_face_inference.py` script.
+- **Base Model Evaluation with VLLM**  
+  Use the `Base_model.py` script to evaluate the base model using the VLLM library.
 
-- **Instruction-Finetuned Model**:  
-  For evaluating instruction-finetuned models, use the specific prompts corresponding to the models provided.
+- **Base Model Evaluation with Hugging Face**  
+  Use the `hugging_face_inference.py` script to evaluate the base model using Hugging Face.
 
-- **Translation Test Pipeline**:  
-  The `Trans_test.py` script is used for translation tasks. For this you also need to setup envirnment for Indic Tranv2 which we Had used as Translation system(https://github.com/AI4Bharat/IndicTrans2/tree/main). It translates from a source language to English, back-translates it, and then evaluates the translated output.
+- **Instruction-Finetuned Model**  
+  For evaluating instruction-finetuned models, use the specific prompts provided for these models.
+
+- **Translation Test Pipeline**  
+  The `Trans_test.py` script is used for translation tasks. You'll need to set up the IndicTrans2 system as a translation system, which is available at [IndicTrans2 GitHub](https://github.com/AI4Bharat/IndicTrans2/tree/main). This system translates from a source language to English, back-translates it, and then evaluates the translated output.
+
+---
 
 ## How to Use
 
+Follow the steps below to set up and run the evaluation scripts:
+
 1. Clone this repository to your local machine.
+   ```bash
+   git clone https://github.com/your-repo/IndicQA-Benchmark.git
+   cd IndicQA-Benchmark
 2. Install necessary dependencies.
+   ```bash
+   pip install -r requirements.txt 
 3. Run the appropriate script based on your evaluation needs.
+   ```bash
+   python Base_model.py
 
 For more details on how to run each script and set up the environment, refer to the individual script documentation.
