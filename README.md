@@ -1,4 +1,7 @@
 # IndicQA-Benchmark
+> [INDIC QA BENCHMARK: A Multilingual Benchmark to Evaluate Question Answering capability of LLMs for Indic Languages](https://arxiv.org/abs/2407.13522)                     
+> Abhishek Kumar Singh, Vishwajeet kumar, Rudra Murthy, Jaydeep Sen, Ashish Mittal and Ganesh Ramakrishnan  
+> The 2025 Annual Conference of the Nations of the Americas Chapter of the ACL, (__ML4H__) 2025
 
 ## Overview
 
