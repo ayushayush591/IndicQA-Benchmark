@@ -22,7 +22,7 @@ To download the benchmark, use the following link:
   For evaluating instruction-finetuned models, use the specific prompts corresponding to the models provided.
 
 - **Translation Test Pipeline**:  
-  The `Trans_test.py` script is used for translation tasks. It translates from a source language to English, back-translates it, and then evaluates the translated output.
+  The `Trans_test.py` script is used for translation tasks. For this you also need to setup envirnment for Indic Tranv2 which we Had used as Translation system(https://github.com/AI4Bharat/IndicTrans2/tree/main). It translates from a source language to English, back-translates it, and then evaluates the translated output.
 
 ## How to Use
 
