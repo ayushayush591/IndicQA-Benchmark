@@ -2,7 +2,6 @@
 
 **A Multilingual Benchmark to Evaluate Question Answering Capability of LLMs for Indic Languages**
 
-> **Citation**:  
 > **Abhishek Kumar Singh, Vishwajeet Kumar, Rudra Murthy, Jaydeep Sen, Ashish Mittal, and Ganesh Ramakrishnan**  
 > *The 2025 Annual Conference of the Nations of the Americas Chapter of the ACL (NAACL) 2025*  
 > [Link to Paper](https://arxiv.org/abs/2407.13522)
