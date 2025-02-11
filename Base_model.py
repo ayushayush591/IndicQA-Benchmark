@@ -62,7 +62,7 @@ parser.add_argument(
 parser.add_argument(
     "--local_dir",
     type=bool,
-    default="/dccstor/cssblr/abhishek_langb/checkpoints",
+    default="./cache",
     help="if specified, we will load the local_dir from here.",
 )
 
@@ -79,14 +79,7 @@ with open(dataset, "r") as file:
     data=json.load(file)
 context = [i['context'] for i in data]
 question = [i['question'] for i in data]
-if("indic_QA" in dataset):
-    if("hin_Deva.json" in dataset or "guj_Gujr.json" in dataset):
-        answer_text = [i['answer'] for i in data]
-    else:
-        answer_text = [i['answer']['text'][0] for i in data]
-else:
-    answer_text = [i['answer'] for i in data]
-
+answer_text = [i['answer'] for i in data]
 #Creating Prompts for iference.
 prompts=[]
 start="Answer the following question based on the information in the given passage.:"
@@ -102,7 +95,7 @@ for i in range(shot,len(context)):
            
 #inference Through VLLM.
 sampling_params = SamplingParams(temperature=0.0, top_p=0.95)
-llm = LLM(model=model_name,device='auto',download_dir=local_data_dir)
+llm = LLM(model=model_name,device='auto',download_dir=local_dir)
 answer=[]
 prediction=[]
 for index, item in enumerate(prompts):
@@ -179,7 +172,7 @@ if not directory_path.endswith('/'):
     filename = os.path.basename(dataset)
     filename=model_name[-9:]+filename
 
-with open(f'{directory_path}/Results/{filename}_.csv', 'w', newline='') as csvfile:
+with open(f'latest/{filename}_.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(['ground_truth','answer'])
     writer.writerows(combined_lists)
