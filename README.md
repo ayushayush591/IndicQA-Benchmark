@@ -1,11 +1,14 @@
 # IndicQA-Benchmark
-> [INDIC QA BENCHMARK: A Multilingual Benchmark to Evaluate Question Answering capability of LLMs for Indic Languages](https://arxiv.org/abs/2407.13522)                     
+> [INDIC QA BENCHMARK: A Multilingual Benchmark to Evaluate Question Answering capability of LLMs for Indic Languages](https://arxiv.org/abs/2407.13522)  
 > Abhishek Kumar Singh, Vishwajeet kumar, Rudra Murthy, Jaydeep Sen, Ashish Mittal and Ganesh Ramakrishnan  
-> The 2025 Annual Conference of the Nations of the Americas Chapter of the ACL, (__ML4H__) 2025
+> The 2025 Annual Conference of the Nations of the Americas Chapter of the ACL, (__NAACL__) 2025
 
 ## Overview
 
-The **IndicQA-Benchmark** repository is designed to evaluate various models and pipelines for question-answering tasks, particularly focused on Indic languages. The repository includes scripts for evaluating base models, fine-tuned instruction models, and translation tasks.
+The **IndicQA-Benchmark** repository is designed to evaluate various models and pipelines for question-answering tasks, particularly focused on Indic languages. The repository includes paths where one can download the benchmark locally, along with scripts for evaluating base models, fine-tuned instruction models, and translation tasks.
+
+To download the benchmark, use the following link:  
+**[Download IndicQA-Benchmark](your-download-link-here)**
 
 ## Scripts
 
