@@ -36,7 +36,7 @@ The repository includes several scripts for evaluating different types of models
   For evaluating instruction-finetuned models, use the specific prompts provided for these models.
 
 - **Translation Test Pipeline**  
-  The `Trans_test.py` script is used for translation tasks. You'll need to set up the IndicTrans2 system as a translation system, which is available at [IndicTrans2 GitHub](https://github.com/AI4Bharat/IndicTrans2/tree/main). This system translates from a source language to English, back-translates it, and then evaluates the translated output.
+  The `Trans_test.py` script is used for translation tasks. You'll need to set up the IndicTrans2 system as a translation system, which is available at [IndicTrans2 GitHub](https://github.com/AI4Bharat/IndicTrans2/tree/main). This will be used for translating from a source language to English, back-translates it, and then evaluates the translated output.
 
 ---
 
