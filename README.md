@@ -53,6 +53,6 @@ Follow the steps below to set up and run the evaluation scripts:
    pip install -r requirements.txt 
 3. Run the appropriate script based on your evaluation needs.
    ```bash
-   python Base_model.py --model_name<Model path> --dataset<Dataset Path>
+   python Base_model.py --model_name<Model path> --dataset<Dataset Path> --local_dir<cache path where you want to store model>
 
 For more details on how to run each script and set up the environment, refer to the individual script documentation.
