@@ -3,4 +3,8 @@ huggingface-hub
 pandas
 torchinfo
 transformers
+sentencepiece
 vllm
+pynvml
+numpy
+git+https://github.com/AI4Bharat/IndicTrans2.git
