@@ -18,7 +18,7 @@ You can easily download and set up the benchmark locally, along with evaluation 
 
 To download the IndicQA-Benchmark, click the link below:
 
-[Download IndicQA-Benchmark](your-download-link-here)
+[Download IndicQA-Benchmark](https://huggingface.co/datasets/ayushayush591/IndicQA_Benchmark)
 
 ---
 
